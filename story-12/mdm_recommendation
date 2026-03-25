@@ -1,0 +1,57 @@
+# Choix d’une solution MDM
+
+## Introduction
+
+Dans le cadre de cet exemple, notre "entreprise spécialisée" dans le développement de solutions web et la gestion de services digitaux pour des clients professionnels compte aujourd’hui près de 300 employés et continue de se développer rapidement. Cette montée en charge implique une utilisation accrue des appareils mobiles pour accéder aux données de l’entreprise, notamment via des applications métiers, des outils collaboratifs et des services cloud.
+
+Dans ce contexte, deux solutions ont été étudiées : Microsoft Intune et VMware Workspace ONE. Le tableau suivant présente une comparaison de ces deux solutions selon plusieurs critères techniques, fonctionnels et économiques.
+
+---
+
+
+| Critères                         | Microsoft Intune                                                          | VMware Workspace ONE                                            |
+| -------------------------------- | ------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| **Prix**                         | ~8$/utilisateur/mois (souvent inclus dans Microsoft 365) ([Microsoft][1]) | ~5.4 à 15$/utilisateur/mois selon version ([saasworthy.com][2]) |
+| **Type de solution**             | 100% Cloud (SaaS)                                                         | Cloud + On-premise possible                                     |
+| **Plateformes supportées**       | Android, iOS, Windows, macOS ([EPC Group][3])                             | Android, iOS, Windows, macOS, Linux, ChromeOS ([Gartner][4])    |
+| **Déploiement**                  | Simple et rapide                                                          | Plus complexe, nécessite expertise                              |
+| **Intégration SI**               | Très forte avec Microsoft (Azure AD, 365, Defender) ([EPC Group][3])      | Bonne mais dépend de VMware                                     |
+| **Gestion des appareils**        | Gestion centralisée efficace                                              | Très avancée et configurable                                    |
+| **Gestion des applications**     | Déploiement, blocage, store interne                                       | Très granulaire (plus de contrôle)                              |
+| **Chiffrement des appareils**    | Obligatoire et vérifiable                                                 | Obligatoire et configurable                                     |
+| **Gestion des mises à jour**     | Automatique et centralisée                                                | Très flexible (plus de contrôle)                                |
+| **Contrôle réseau (VPN, accès)** | VPN + politiques d’accès sécurisées                                       | VPN + contrôle avancé des accès                                 |
+| **Détection des menaces**        | Intégration native avec Microsoft Defender                                | Intégration via outils tiers                                    |
+| **Réponse aux incidents**        | Wipe, blocage, quarantaine                                                | Très complet (plus d’options)                                   |
+| **Surveillance / logs**          | Centralisé via Azure                                                      | Logs détaillés et analytics avancés                             |
+| **Conformité (compliance)**      | Politiques automatiques                                                   | Très personnalisable                                            |
+| **Détection root / jailbreak**   | Détection + blocage automatique                                           | Détection avancée configurable                                  |
+| **Restriction des usages**       | Applications, accès, sécurité                                             | Très granulaire (plus précis)                                   |
+| **Facilité d’administration**    | Très simple                                                               | Plus complexe                                                   |
+| **Scalabilité**                  | Très bonne                                                                | Excellente (grandes entreprises)                                |
+
+[1]: https://www.microsoft.com/en-us/security/business/microsoft-intune-pricing?utm_source=chatgpt.com "Microsoft Intune Plans and Pricing"
+[2]: https://www.saasworthy.com/product/workspace-one/pricing?utm_source=chatgpt.com "Workspace ONE Pricing: Cost and Pricing plans"
+[3]: https://www.epcgroup.net/microsoft-intune-vs-vmware-workspace-one?utm_source=chatgpt.com "Microsoft Intune vs VMware Workspace ONE - EPC Group"
+[4]: https://www.gartner.com/reviews/market/endpoint-management-tools?utm_source=chatgpt.com "Best Endpoint Management Tools Reviews 2025"
+
+
+---
+
+## Recommandation
+
+À l’issue de cette comparaison, les deux solutions étudiées offrent un niveau de sécurité et de contrôle élevé. VMware Workspace ONE se distingue par sa grande flexibilité et ses fonctionnalités avancées, particulièrement adaptées aux environnements complexes et aux grandes entreprises disposant de ressources techniques importantes.
+
+Cependant, dans le contexte de notre entreprise, Microsoft Intune apparaît comme le choix le plus pertinent. Sa simplicité de déploiement, son intégration native avec l’écosystème Microsoft déjà utilisé (Microsoft 365, Azure, Teams) et son coût maîtrisé en font une solution particulièrement adaptée. De plus, sa capacité à évoluer facilement avec l’entreprise permet d’assurer une bonne scalabilité à mesure que l’effectif augmente.
+
+Au regard des critères analysés (coût, intégration, facilité de déploiement, sécurité et scalabilité), la solution **Microsoft Intune** est recommandée pour notre entreprise.
+
+Cette recommandation repose sur les éléments suivants :
+- Intégration native avec l’écosystème existant (Microsoft 365, Azure, Teams)
+- Coût maîtrisé et souvent inclus dans les licences existantes
+- Simplicité de mise en œuvre et d’administration
+- Couverture fonctionnelle suffisante pour les besoins actuels
+
+VMware Workspace ONE reste une excellente solution, mais sa complexité et son coût plus élevé la rendent moins adaptée au contexte de notre entreprise.
+
+**Décision :** adoption de Microsoft Intune comme solution MDM.
